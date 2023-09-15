@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Karla', 'Playfair Display', serif;
+}
+
+  .mob{
+     display: none;
+  }
+  .section {
+    &-gap {
+      padding: 60px 0 120px 0;
+    }
+    &-bottom{
+      padding-bottom: 120px;
+      &_lg {
+        padding-bottom: 180px;
+      }
+    }
+  }
+.l{
+  &-container{
+    width: 100%; 
+  }
+  &-wrap {
+    max-width: 1680px;
+    min-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+  }
+}
+
+.l-container{
+  width: 100%;
+}
