@@ -3,7 +3,7 @@ import '@/app/page.scss'
 import { useEffect, useState } from 'react';
 import '@/app/locales/i18n';
 import { useTranslation } from "react-i18next";
-
+import i18n from '@/app/locales/i18n';
 export default function Home() {
   const content = "I'm\nWeb Publisher";
   const [typingText, setTypingText] = useState('')
@@ -39,8 +39,13 @@ export default function Home() {
               <h1 className="logo">
                   <span>HWH</span>
               </h1>
-              <div className="toggle">
-                <input id="night_day" type="button" value="night" />
+              <div className="lang">
+                <button onClick={() => {i18n.changeLanguage("ko")}}>
+                    한글
+                </button>
+                <button onClick={() => {i18n.changeLanguage("en")}}>
+                    영어
+                </button>
               </div>
             </div>
           </header>
@@ -91,7 +96,6 @@ export default function Home() {
                                   <li>{t("skill.list1.text1")}</li> 
                                   <li>{t("skill.list1.text2")}</li>
                                   <li>{t("skill.list1.text3")}</li>
-                                  <li>{t("skill.list1.text4")}</li>
                               </ul>
                               </div>
                               <div className="skill_list_text">
@@ -164,150 +168,143 @@ export default function Home() {
                   </div>
                 <ul className="portfolio_wrap">
                     <li className='portfolio_list'>
-                        <div class="portfolio_list_img">
+                        <div className="portfolio_list_img">
                             <img src="/image/page/daejongsang.png" alt="대종상" />
-                            <div class="hover-box">
-                                <div class="portfolio_link">
+                            <div className="hover-box">
+                                <div className="portfolio_link">
                                     <a href="https://github.com/wunhui/daejongsang">
                                         Git site
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio_list_text">
+                        <div className="portfolio_list_text">
                             <p>
-                                첫 제작 웹사이트인 대종상 영화제입니다.<br/>
-                                대종상 영화제를 리디자인 하여 만들었습니다.<br/>
+                                {t("portfolio.text1")}
                             </p>
                         </div>
                     </li>
                     <li className='portfolio_list'>
-                        <div class="portfolio_list_img">
+                        <div className="portfolio_list_img">
                             <img src="/image/page/elyfi.png" alt="엘리파이" />
-                            <div class="hover-box">
-                                <div class="portfolio_link">
+                            <div className="hover-box">
+                                <div className="portfolio_link">
                                     <a href="https://wunhui.github.io/elyfi_publising/">
                                         Git site
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio_list_text">
+                        <div className="portfolio_list_text">
                             <p>
-                                클론코딩으로 제작한 엘리파이 사이트입니다.    
+                            {t("portfolio.text2")}
                             </p>
                         </div>
                     </li>
                     <li className='portfolio_list'>
-                        <div class="portfolio_list_img">
+                        <div className="portfolio_list_img">
                             <img src="/image/page/art.png" alt="국립현대미술관" />
-                            <div class="hover-box">
-                                <div class="portfolio_link">
+                            <div className="hover-box">
+                                <div className="portfolio_link">
                                     <a href="https://github.com/wunhui/art-react">
                                         Git site
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio_list_text">
+                        <div className="portfolio_list_text">
                             <p>
-                                리액트를 사용하여 클론코딩한<br/>웹사이트인 국립현대미술관 입니다.
+                            {t("portfolio.text3")}
                             </p>
                         </div>
                     </li>
                     <li className='portfolio_list'>
-                        <div class="portfolio_list_img">
+                        <div className="portfolio_list_img">
                             <img src="/image/page/goldendisc.png" alt="골든디스크어워즈" />
-                            <div class="hover-box">
-                                <div class="portfolio_link">
+                            <div className="hover-box">
+                                <div className="portfolio_link">
                                     <a href="https://github.com/wunhui/GoldenDiscAwardRe">
                                         Git site
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio_list_text">
+                        <div className="portfolio_list_text">
                             <p>
-                                개인 프로젝트인 골든디스크어워즈 입니다.<br/>
-                                react-next를 사용하였습니다.
+                            {t("portfolio.text4")}
                             </p>
                         </div>
                     </li>
                     <li className='portfolio_list'>
-                        <div class="portfolio_list_img">
+                        <div className="portfolio_list_img">
                             <img src="/image/page/wantu.png" alt="원하냥" />
-                            <div class="hover-box">
-                                <div class="portfolio_link">
+                            <div className="hover-box">
+                                <div className="portfolio_link">
                                     <a href="/">
                                         Git site
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio_list_text">
+                        <div className="portfolio_list_text">
                             <p>
-                                Vue3를 사용하여 만든 본사 프로젝트입니다.<br/>
-                                intro 페이지를 제작했으며 다국어까지 맡아서 진행했습니다.<br/>
-                                현재 사이트가 없습니다.
+                            {t("portfolio.text5")}
                             </p>
                         </div>
                     </li>
                     <li className='portfolio_list'>
-                        <div class="portfolio_list_img">
+                        <div className="portfolio_list_img">
                             <img src="/image/page/lina.png" alt="라이나생명" />
-                            <div class="hover-box">
-                                <div class="portfolio_link">
+                            <div className="hover-box">
+                                <div className="portfolio_link">
                                     <a href="https://www.lina.co.kr/">
                                         Git site
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio_list_text">
+                        <div className="portfolio_list_text">
                             <p>
-                                Vue2를 사용하여 만든<br/>
-                                라이나생명대고객채널재구축 적응형웹 사이트 입니다.<br/>
-                                22.06.27 ~ 23.06.16 동안 맡은 프로젝트 입니다.
+                            {t("portfolio.text6")}
                             </p>
                         </div>
                     </li>
                     <li className='portfolio_list'>
-                        <div class="portfolio_list_img">
+                        <div className="portfolio_list_img">
                             <img src="/image/page/freeiveService.png" alt="프리아이브 홈페이지 서비스" />
-                            <div class="hover-box">
-                                <div class="portfolio_link">
+                            <div className="hover-box">
+                                <div className="portfolio_link">
                                     <a href="https://www.lina.co.kr/">
                                         Git site
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio_list_text">
+                        <div className="portfolio_list_text">
                             <p>
-                                Vue3를 사용하여 만든 회사 홈페이지 입니다.<br/>
-                                서비스영역을 맡았으며 1일 소요하여 만들었습니다.
+                            {t("portfolio.text7")}
                             </p>
                         </div>
                     </li>
                     <li className='portfolio_list'>
-                        <div class="portfolio_list_img">
-                            <img src="/image/page/freeiveService.png" alt="준비중" />
-                            <div class="hover-box">
-                                <div class="portfolio_link">
-                                    <a href="https://www.lina.co.kr/">
-                                        준비중
+                        <div className="portfolio_list_img">
+                            <img src="/image/page/hyundai.png" alt="현대백화점" />
+                            <div className="hover-box">
+                                <div className="portfolio_link">
+                                    <a href="https://github.com/wunhui/hyundai">
+                                        Git Site
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio_list_text">
+                        <div className="portfolio_list_text">
                             <p>
-                                React - next를 이용한 현대백화점 클론코딩
+                            {t("portfolio.text8")}
                             </p>
                         </div>
                     </li>
                     <li className='portfolio_list last'>
-                        <div class="portfolio_list_text">
+                        <div className="portfolio_list_text">
                             <p>
                                 그외 어드민 사이트
                             </p>

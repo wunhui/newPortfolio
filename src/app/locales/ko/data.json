@@ -6,8 +6,7 @@
     "list1": {
       "text1": "웹 표준 및 접근을 고려한 시맨틱 마크업 작업",
       "text2": "반응형 웹 제작 가능",
-      "text3": "SCSS를 사용한 유지보수 최적화 된 코드",
-      "text4": "웹 접근성 인증 마크 흭득 프로젝트 경험"
+      "text3": "SCSS를 사용한 유지보수 최적화 된 코드"
     },
     "title2": "2 - Javascript & Jquery",
     "list2": {
@@ -37,5 +36,15 @@
       "text1": "작업 현황 공유",
       "text2": "이슈 관리"
     }
+  },
+  "portfolio" :{
+    "text1": "대종상 영화제(html)_ re design",
+    "text2": "엘리파이(React)_ clone coding",
+    "text3": "국립현대미술관(React)_ clone coding",
+    "text4": "골든디스크어워즈(React-next)_ re design",
+    "text5": "원하냥(Vue3)_ company project",
+    "text6": "라이나생명(Vue2)_ company project",
+    "text7": "프리아이브(Vue3)_ company project",
+    "text8": "현대백화점(React_next)_ clone coding"
   }
 }

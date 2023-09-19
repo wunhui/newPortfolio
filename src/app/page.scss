@@ -70,27 +70,17 @@
           white-space: pre-line;
         }
       }
-    .toggle {
-      position: relative;
-      display: black;
-      width: 60px;
-      height: 30px;
-      border: 1px solid #000;
-      border-radius: 20px;
-    
-      #night_day {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        border-radius: 50%;
-        background: #000;
-        color: #fff;
-        border: none;
-        text-indent: -99999px;
-      }
+    .lang {
+        display: flex;
+        width: 120px;
+        height: 50px;
+        border-bottom: 1px solid #ddd;
+        button{
+            background-color: transparent;
+            flex: 1;
+            color: $black;
+            font-size: $fs18;
+        }
     }
   }
 }
@@ -117,6 +107,7 @@
   }
   &_lf {
     width: 525px;
+    height: 680px;
     z-index: 1;
     display: flex;
     position: relative;
@@ -133,7 +124,8 @@
 
   &_rt {
     z-index: 2;
-    margin-left: 10rem;
+    width: calc(100% - 625px);
+    margin-left: 100px;
     .typing_box {
       padding-top: -2rem;
       height: 150px;

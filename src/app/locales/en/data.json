@@ -1,12 +1,50 @@
 {
-  "testText" : "안녕하세요",
+  "testText" : "Hello",
+  "aboutText" : "My dream is to be a front-end developer.<br/>In order to grow one step further and achieve my dream, I will be a web publisher who is not refined to the existing things, is not afraid of learning, and always strives to develop.",
   "skill" : {
-    "title": "1 - HTML & CSS",
-    "list": {
-      "text1": "웹 표준 및 접근을 고려한 시맨틱 마크업 작업",
-      "text2": "웹 표준 및 접근을 고려한 시맨틱 마크업 작업",
-      "text3": "웹 표준 및 접근을 고려한 시맨틱 마크업 작업",
-      "text4": "웹 표준 및 접근을 고려한 시맨틱 마크업 작업"
+    "title1": "1 - HTML & CSS",
+    "list1": {
+      "text1": "Semantic markup work considering web standards and access",
+      "text2": "Responsive web production is possible",
+      "text3": "Maintenance optimized code using SCSS"
+    },
+    "title2": "2 - Javascript & Jquery",
+    "list2": {
+      "text1": "Implementing a variety of interactions",
+      "text2": "Implementation of Animation",
+      "text3": "Utilize plug-ins"
+    },
+    "title3": "3 - React",
+    "list3": {
+      "text1": "State management using usestate",
+      "text2": "Run specific events when rendering using useEffect",
+      "text3": "Delivering a single object to a component using props",
+      "text4": "Utilize React Grammar"
+    },
+    "title4": "4 - Git",
+    "list4": {
+      "text1": "Shape management using Git"
+    },
+    "title5": "5 - Vue",
+    "list5": {
+      "text1": "Implement a variety of interactions using life cycles",
+      "text2": "vue2, vue3 enabled",
+      "text3": "Common, page component implementation"
+    },
+    "title6": "6 - Jira",
+    "list6": {
+      "text1": "Share the status of your work",
+      "text2": "Issue management"
     }
+  },
+  "portfolio" :{
+    "text1": "Daejongsang Film Festival(html)_ re design",
+    "text2": "Elyfi(React)_ clone coding",
+    "text3": "National Museum of Modern and Contemporary Art(React)_ clone coding",
+    "text4": "Golden Disc Awards(React-next)_ re design",
+    "text5": "want you(Vue3)_ company project",
+    "text6": "lina(Vue2)_ company project",
+    "text7": "freeive(Vue3)_ company project",
+    "text8": "Hyundai Department Store(React_next)_ clone coding"
   }
 }
