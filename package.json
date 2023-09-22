@@ -2,14 +2,12 @@
   "name": "golden-disc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wunhui.github.io/newPortfolio/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "predeploy": "npm run build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "gh-pages -d out --dotfiles"
+    "lint": "next lint"
   },
   "dependencies": {
     "i18next": "^23.5.1",
