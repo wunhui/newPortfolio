@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "predeploy": "npm run build",
+    "build": "next build",
+    "deploy": "next export && touch out/.nojekyll && git add -f out/ && git commit -m \"Deploy\" && git subtree split --prefix out -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "lint": "next lint"
   },
   "dependencies": {
     "i18next": "^23.5.1",
