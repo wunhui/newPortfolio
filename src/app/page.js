@@ -166,7 +166,27 @@ export default function Home() {
                   <div className="rotate">
                       <h2>Portfolio</h2>
                   </div>
-                <ul className="portfolio_wrap">
+                <ul className="portfolio_wrap">     
+                    <li className='portfolio_list'>
+                        <div className="portfolio_list_img">
+                            <img src="/image/page/reblog.png" alt="Re blog" />
+                            <div className="hover-box">
+                                <div className="portfolio_link">
+                                    <a href="https://mihye0924.github.io/re-blog/">
+                                        Git site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="portfolio_list_text">
+                            <p>
+                                {t("portfolio.text0")}
+                            </p>
+                            <p>
+                                {t("portfolio.desc")}
+                            </p>
+                        </div>
+                    </li>
                     <li className='portfolio_list'>
                         <div className="portfolio_list_img">
                             <img src="/image/page/daejongsang.png" alt="대종상" />

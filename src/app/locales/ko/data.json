@@ -38,6 +38,8 @@
     }
   },
   "portfolio" :{
+    "text0": "리 블로그(React)_ re design",
+    "desc": "공동 프로젝트로 제 담당은 댓글 기능, 프로필 업데이트, 로그인 등 40% 담당 했습니다.",
     "text1": "대종상 영화제(html)_ re design",
     "text2": "엘리파이(React)_ clone coding",
     "text3": "국립현대미술관(React)_ clone coding",

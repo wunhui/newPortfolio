@@ -38,6 +38,8 @@
     }
   },
   "portfolio" :{
+    "text0": "Re bolg(React)_ re design",
+    "desc": "As a joint project, my responsibility was 40% responsible for comment function, profile update, and login.",
     "text1": "Daejongsang Film Festival(html)_ re design",
     "text2": "Elyfi(React)_ clone coding",
     "text3": "National Museum of Modern and Contemporary Art(React)_ clone coding",
